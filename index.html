@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-box">
+            <div class="left-box">
+                <span></span>
+                <span>Categories</span>
+                <span></span>
+                <div class="group-one">
+                    <div class="completed">Completed</div>
+                    <div class="urgent">Urgent</div>
+                    <div class="important">Important</div>
+                    <div class="later">Later</div>
+                    <div class="study">To study</div>
+                </div>
+
+            </div>
+
+            <div class="right-box">
+                <div class="right-top-box">
+                    <span>5 task</span>
+                    <span>Add new task </span>
+                </div>
+                <div class="right-buttom-box">
+
+
+
+
+                    <div id="posts">
+                        <div class="completed-post">
+                            <div class="out-circle">
+                                <div class="check-backgroung">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div class="in-circle"></div>
+                            </div>
+                            <div>
+                            <p>post-one</p>
+                           </div>
+                            <div>
+
+                                <p id="dataTypeOutput"></p>
+                            </div>
+
+                            <div class="icon">
+                                <div class="pen-bg" onclick="myFunction()"> <i onclick="editPost (this)" class="fa-regular fa-pen-to-square"></i></div>
+                                <div class="bin-bg" onClick="deletePost(this)"> <i class="fa fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="completed-box">
+                        <div style="width: 248px; height: 27px;"> <span>Active <span>All</span>Completed</span></div>
+                    </div>
+                    <div id="editSection">
+                        <form action="" id="editPostform">
+                            <textarea type="text"
+                                id="editpostinput"></textarea><button type="submit" onclick="myFunction()">Save</button></form>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main-box">
+            <div class="create-task-section">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <h1>CREATE TASK</h1>
+
+                <form id="form">
+                    <textarea name="" id="input" cols="30" rows="10"></textarea>
+                    <div class="task-categories-section">
+                        <span></span>
+                        <span>Categories</span>
+                        <span></span>
+                    </div>
+
+
+
+                    <div class="task-categories">
+
+
+
+                        <div class="task-urgent-and-important-section">
+
+
+
+
+                            <label> <input type="radio" name="type" id="inputRadio">Urgent</label>
+                            <label> <input type="radio" name="type" id="inputRadio">Important</label>
+                        </div>
+                        <div class="task-later-and-study-section">
+                            <label> <input type="radio" name="type">Later</label>
+                            <label> <input type="radio" name="type">To study</label>
+
+                        </div>
+
+                        <label class="task-completed-section"> <input type="radio" name="type">Completed</label>
+
+
+
+                    </div>
+
+                    <div id="msg"></div>
+
+                    <button type="submit" >SUBMIT TASK</button>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
